@@ -15,8 +15,7 @@ class Builder:
     def __init__(self) -> None:
         self.loading()
 
-        if not self.check():
-            exit()
+
 
         self.webhook = input(f'{Fore.MAGENTA}[{Fore.RESET}+{Fore.MAGENTA}]{Fore.RESET} Enter your webhook: ')
         if not self.check_webhook(self.webhook):
